@@ -18,8 +18,8 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs
-        .sendForm('service_8guzvbk', 'template_20dipsx', form.current, {
-            publicKey: '9FqzVpSZ0oxIniV6H',
+        .sendForm(content.emailJs_ServiceID, content.emailJs_TemplateID, form.current, {
+            publicKey: content.emailJs_API,
         })
         .then(
             () => {
