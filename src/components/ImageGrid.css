@@ -1,0 +1,125 @@
+.image-gallery-rows {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 150px 200px 0px  200px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-gallery-columns {
+  flex: 50%;
+  max-width: 65%;
+  padding: 0 4px;
+  line-height: 0;
+ 
+} 
+
+.image-gallery-columns img { 
+  width: 25%;
+  height: 200px; 
+  object-fit: cover;
+  transition: transform 0.s ease-in-out, opacity 0.s;
+  cursor: pointer;
+}
+
+.image-gallery-columns img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
+@media (max-width: 1024px) {
+  .image-gallery-columns {
+    flex: 100%; 
+    max-width: 100%;
+  }
+
+  .image-gallery-columns img { 
+    width: 35%;
+    height: 150px; 
+    object-fit: cover;
+    transition: transform 0.s ease-in-out, opacity 0.s;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .image-gallery-rows {
+    padding: 10px 10px 0px 120px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-gallery-columns {
+    flex: 100%; 
+    max-width: 100%;
+  }
+
+  .image-gallery-columns img { 
+    width: 35%;
+    height: 100px; 
+    object-fit: cover;
+    transition: transform 0.s ease-in-out, opacity 0.s;
+    cursor: pointer;
+  }
+}
+
+.lg-backdrop {
+  background: rgba(0, 0, 0, 0.9) !important;
+  z-index: 10000;
+}
+
+.lg-outer {
+  z-index: 10000 !important;
+}
+
+.lg-outer .lg-thumb-outer {
+  display: none;
+}
+
+.lg-prev, .lg-next {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: background 0.3s;
+}
+
+.lg-prev:hover, .lg-next:hover {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.lg-close {
+  top: 20px;
+  right: 20px;
+  font-size: 24px !important;
+  color: white !important;
+  background: none !important;
+  transition: opacity 0.3s;
+}
+
+.lg-close:hover {
+  opacity: 0.7;
+}
+
+.lg-sub-html {
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 10px;
+}
+
+.lg-thumb-item {
+  border: none !important;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.lg-thumb-item:hover, .lg-thumb-item.active {
+  opacity: 1;
+}

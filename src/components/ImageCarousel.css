@@ -1,0 +1,34 @@
+
+.carousel-container {
+    width: 100%;
+    position: relative;
+    padding-top: 155px;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+    .carousel-container {
+        padding-top: 100px;
+    }
+
+    .carousel-image {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container {
+        padding-top: 100px;
+    }
+    .carousel-image {
+        height: 35vh;
+    }
+}
+
