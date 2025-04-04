@@ -55,5 +55,5 @@ To clone this website to your local machine, run the following commands:
 
 ## Screenshots
 
-![Excalidraw](https://excalidraw.com/#json=bAvCAe_GshnL6lHG9_H9i,7F49Woy9_KpQzB0Xs07Eog)
-![Figma](https://www.figma.com/design/x34o4XOERUgSHbfmQsCudi/MSM-Marcenaria?t=69xUuSFnckqI2b1r-1)
+[Excalidraw](https://excalidraw.com/#json=bAvCAe_GshnL6lHG9_H9i,7F49Woy9_KpQzB0Xs07Eog)
+[Figma](https://www.figma.com/design/x34o4XOERUgSHbfmQsCudi/MSM-Marcenaria?t=69xUuSFnckqI2b1r-1)
