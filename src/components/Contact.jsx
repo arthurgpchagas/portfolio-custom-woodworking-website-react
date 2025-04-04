@@ -6,7 +6,7 @@ const Contact = () => {
     const [content, setContent] = useState({});
 
     useEffect(() => {
-        fetch("/content.json")
+        fetch("/contentExample.json")
             .then((response) => response.json())
             .then((data) => setContent(data))
             .catch((error) => console.error("Erro ao carregar JSON:", error));
@@ -56,7 +56,7 @@ const Contact = () => {
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6934902341545!2d-46.5003423!3d-23.5435242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce674bc12c3e7b%3A0x6365ffa023fe6254!2sRua%20Dr.%20Pereira%20de%20Resende%2C%20112%20-%20Vila%20Nhocun%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003558-020!5e0!3m2!1spt-BR!2sbr!4v1743029997902!5m2!1spt-BR!2sbr"></iframe>
+                src={content.map}></iframe>
             </div>
         </div>
 

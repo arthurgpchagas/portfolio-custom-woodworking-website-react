@@ -7,7 +7,7 @@ const Footer = () => {
     const [content, setContent] = useState({});
 
     useEffect(() => {
-        fetch("/content.json")
+        fetch("/contentExample.json")
             .then((response) => response.json())
             .then((data) => setContent(data))
             .catch((error) => console.error("Erro ao carregar JSON:", error));
