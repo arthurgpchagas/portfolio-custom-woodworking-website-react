@@ -48,7 +48,7 @@ The client simply updates the values as needed.
 
 To clone this website to your local machine, run the following commands:
 
-1. git clone https://github.com/Arthurchagas01/portfolio-custom-woodworking-website-react
+1. git clone https://github.com/arthurgpchagas/portfolio-custom-woodworking-website-react
 2. cd marcenaria-portfolio-custom-woodworking-website-react
 3. npm install
 4. npm start
