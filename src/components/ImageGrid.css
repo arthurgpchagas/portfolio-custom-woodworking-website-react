@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding: 150px 200px 0px  200px;
+  padding: 100px 100px 0px  100px;
   gap: 10px;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@
 
 .image-gallery-columns img { 
   width: 25%;
-  height: 200px; 
+  height: 180px; 
   object-fit: cover;
   transition: transform 0.s ease-in-out, opacity 0.s;
   cursor: pointer;
@@ -48,7 +48,7 @@
 @media (max-width: 768px) {
 
   .image-gallery-rows {
-    padding: 10px 10px 0px 120px;
+    padding: 10px 10px 0px 50px;
     gap: 5px;
     justify-content: center;
     align-items: center;
@@ -60,8 +60,8 @@
   }
 
   .image-gallery-columns img { 
-    width: 35%;
-    height: 100px; 
+    width: 30%;
+    height: 90px; 
     object-fit: cover;
     transition: transform 0.s ease-in-out, opacity 0.s;
     cursor: pointer;

@@ -26,8 +26,8 @@
 }
 
 .first-image-right {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
 
 .about-text h2 {
@@ -52,7 +52,7 @@
 
     .about-text h2 {
         font-size: 1.8rem; 
-        margin-left: 15px; /
+        margin-left: 15px; 
     }
 
     .box-about {
@@ -92,7 +92,7 @@
     }
 
     .brown-line-right {
-        height: 60px; 
+        height: 80px; 
     }
 
     .text-container-right {

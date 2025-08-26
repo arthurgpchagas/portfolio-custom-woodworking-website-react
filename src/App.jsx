@@ -7,6 +7,7 @@ import CallUs from './components/CallUs';
 import PropagandaRight from './components/PropagandaRight';
 import  ContactUs  from './components/Contact';
 import Footer from './components/Footer';
+import AutoPlayCarousel from './components/AutoPlayCarousel';
 import './App.css';
 
 
@@ -33,6 +34,7 @@ function App() {
       <section id="contact">
         <ContactUs />
       </section>
+      <AutoPlayCarousel />
       <Footer />
     </div>
   );

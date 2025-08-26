@@ -1,5 +1,5 @@
-import React, { useRef, useEffect, useState } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useEffect, useState } from 'react';
+import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import "./Contact.css";
 
 const Contact = () => {
@@ -11,25 +11,6 @@ const Contact = () => {
             .then((data) => setContent(data))
             .catch((error) => console.error("Erro ao carregar JSON:", error));
     }, []);
-    
-    const form = useRef();
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs
-        .sendForm(content.emailJs_ServiceID, content.emailJs_TemplateID, form.current, {
-            publicKey: content.emailJs_API,
-        })
-        .then(
-            () => {
-            console.log('SUCCESS!');
-            },
-            (error) => {
-            console.log('FAILED...', error.text);
-            },
-        );
-    };
 
   return (
     <section className="contact-information">
@@ -45,44 +26,52 @@ const Contact = () => {
                 <p><strong>Endereço:</strong> {content.address}</p>
                 <p><strong>E-mail:</strong> {content.email}</p>
                 <p><strong>Celular:</strong> {content.cellphone}</p>
+                <p>{content.social_media_text}</p>
+                        
+                <div className="box-social-media">
+                    <a
+                        href={`https://www.instagram.com/${content.instagram}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                        title="Instagram"
+                    >
+                        <FaInstagram size={30} color="#E4405F" />
+                    </a>
+
+                    <a
+                        href={`https://www.facebook.com/${content.facebook}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                        title="Facebook"
+                    >
+                        <FaFacebook size={30} color="#1877F2" />
+                    </a>
+
+                    <a
+                        href={`https://wa.me/${content.whatsapp}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="WhatsApp"
+                        title="WhatsApp"
+                    >
+                        <FaWhatsapp size={30} color="#25D366" />
+                    </a>
+                    </div>
             </div>
             
             <div className="maps">
             <iframe
                 title="Google Maps"
                 width="100%"
-                height="300"
+                height="500"
                 style={{ border: 0 }}
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
                 src={content.map}></iframe>
             </div>
-        </div>
-
-        <div className="container-with-everything">
-            <div className="container-with-forms">
-            <img src="brown-line.jpg" alt="brown-line" className="brown-line-forms"/>
-                <form ref={form} onSubmit={sendEmail}>
-                    <p>Mande sua dúvida que entraremos em contato!</p>
-                    <label>Nome</label>
-                    <input type="text" name="name" />
-                    <label>Email</label>
-                    <input type="email" name="email" />
-                    <label>Celular</label>
-                    <input type="tel" name="cellphone" />
-                    <label>Assunto</label>
-                    <input type="text" name="subject" />
-                    <label>Messagem</label>
-                    <textarea name="message" />
-                    <div className="button-container">
-                        <button type="submit" value="Send">Enviar</button>
-                    </div>
-        
-                </form>
-            </div>
-
-           
         </div>
     </section>
 

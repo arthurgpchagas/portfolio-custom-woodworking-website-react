@@ -22,13 +22,13 @@ const PropagandaLeft = () => {
             <div className="text-container-left">
 
                 <div className="box-container-1">
-                    <img src="brown-line.jpg" alt="brown-line" className="brown-line"/>
+                    <img src="brown-line.jpg" alt="brown-line" className="brown-line-left"/>
                     <img src="high-quality.svg" alt="icon-quality" className="quality-icon"/>
                     <p>{content["first-text"]}</p>
                 </div>
 
                 <div className="box-container-2">
-                    <img src="brown-line.jpg" alt="brown-line" className="brown-line"/>
+                    <img src="brown-line.jpg" alt="brown-line" className="brown-line-left"/>
                     <img src="ideia.svg" alt="icon-idea" className="idea-icon"/>
                     <p>{content["second-text"]}</p>
                 </div>
