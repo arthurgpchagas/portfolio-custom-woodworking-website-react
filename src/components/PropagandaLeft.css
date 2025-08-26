@@ -86,7 +86,7 @@
 
 @media (max-width: 768px) {
     .propaganda-container-left {
-        padding: 20px 20px;
+        padding: 30px 35px;
     }
 
     .first-image-left {
@@ -99,7 +99,6 @@
         flex-direction: row;
         align-items: center;
         margin-bottom: 10px;
-        padding: 15px;
     }
 
     .quality-icon, .idea-icon {
