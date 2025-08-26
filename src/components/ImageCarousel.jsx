@@ -7,10 +7,14 @@ import "swiper/css/pagination";
 import "./ImageCarousel.css"
 
 const images = [
-    "carousel1.jpg",
-    "carousel2.jpg",
-    "carousel3.jpg",
-    "carousel4.jpg"
+    "carrosel1.jpg",
+    "carrosel2.jpg",
+    "carrosel3.jpg",
+    "carrosel4.jpg",
+    "carrosel5.jpg",
+    "carrosel6.jpg",
+    "carrosel7.jpg",
+    "carrosel8.jpg",
 ];
 
 const ImageCarousel = () => {
